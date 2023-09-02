@@ -671,3 +671,27 @@ INFO 2023-09-01 12:18:04,567 basehttp 2544 10944 "GET /myapp2/about/ HTTP/1.1" 2
 INFO 2023-09-01 12:18:21,097 autoreload 2544 5228 C:\G\Project\Django\firstdjango\myapp2\views.py changed, reloading.
 INFO 2023-09-01 12:18:21,564 autoreload 18308 12496 Watching for file changes with StatReloader
 INFO 2023-09-01 12:18:25,070 basehttp 18308 6124 "GET /myapp2/about/ HTTP/1.1" 200 213
+INFO 2023-09-01 12:38:10,386 autoreload 16224 15240 Watching for file changes with StatReloader
+INFO 2023-09-01 12:39:17,127 autoreload 13464 7356 Watching for file changes with StatReloader
+INFO 2023-09-01 12:42:18,353 autoreload 14220 2044 Watching for file changes with StatReloader
+INFO 2023-09-02 10:13:40,073 autoreload 5616 11980 Watching for file changes with StatReloader
+WARNING 2023-09-02 10:13:42,582 log 5616 8804 Not Found: /
+WARNING 2023-09-02 10:13:42,583 basehttp 5616 8804 "GET / HTTP/1.1" 404 2384
+WARNING 2023-09-02 10:13:42,626 log 5616 8804 Not Found: /favicon.ico
+WARNING 2023-09-02 10:13:42,628 basehttp 5616 8804 "GET /favicon.ico HTTP/1.1" 404 2435
+INFO 2023-09-02 10:13:56,613 autoreload 5616 11980 C:\G\Project\Django\firstdjango\firstdjango\urls.py changed, reloading.
+INFO 2023-09-02 10:13:57,074 autoreload 4128 1216 Watching for file changes with StatReloader
+WARNING 2023-09-02 10:13:57,876 log 4128 9468 Not Found: /
+WARNING 2023-09-02 10:13:57,876 basehttp 4128 9468 "GET / HTTP/1.1" 404 2379
+WARNING 2023-09-02 10:13:58,602 log 4128 9468 Not Found: /
+WARNING 2023-09-02 10:13:58,602 basehttp 4128 9468 "GET / HTTP/1.1" 404 2379
+WARNING 2023-09-02 10:13:59,220 log 4128 9468 Not Found: /
+WARNING 2023-09-02 10:13:59,221 basehttp 4128 9468 "GET / HTTP/1.1" 404 2379
+INFO 2023-09-02 10:14:05,520 autoreload 4128 1216 C:\G\Project\Django\firstdjango\firstdjango\urls.py changed, reloading.
+INFO 2023-09-02 10:14:05,992 autoreload 6880 8964 Watching for file changes with StatReloader
+INFO 2023-09-02 10:14:06,425 basehttp 6880 8340 "GET / HTTP/1.1" 200 13
+INFO 2023-09-02 11:56:28,807 autoreload 5552 7620 Watching for file changes with StatReloader
+INFO 2023-09-02 12:10:56,172 autoreload 12700 5400 Watching for file changes with StatReloader
+INFO 2023-09-02 12:14:13,551 autoreload 10632 4168 Watching for file changes with StatReloader
+INFO 2023-09-02 13:27:36,244 autoreload 1836 8528 Watching for file changes with StatReloader
+INFO 2023-09-02 13:29:51,723 autoreload 2604 14324 Watching for file changes with StatReloader
