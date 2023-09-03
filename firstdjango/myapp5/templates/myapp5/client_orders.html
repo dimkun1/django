@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Заказы клиента</title>
+</head>
+<body>
+    <h1>Заказы клиента {{ client }}:</h1>
+    <h2>
+        {% for key, value in orders.items %}
+            {{ key }}  - Продукты: {{ value }}<br>
+        {% endfor %}
+    </h2>
+</body>
+</html>

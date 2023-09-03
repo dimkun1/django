@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    <h3>Автор коментария {{ comment.author }}</h3>
+    <p>Статья {{ comment.article }}</p>
+    <p>Текст коментария {{ comment.comment }}</p>
+    <p>Дата создания {{ comment.create_date }}</p>
+    <p>Дата обновления {{ comment.update_date }}</p>
+
+
+{% endblock %}
+

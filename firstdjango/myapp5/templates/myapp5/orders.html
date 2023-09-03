@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+
+    <h2>{{ title }}</h2>
+    <ul>
+    {% for order in orders %}
+    <li>Клиент - {{ order.customer }}<a href="{% url 'order' order.id %}">  Номер заказа - {{ order.id }}</a> </li>
+    {% endfor %}
+    </ul>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+

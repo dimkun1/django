@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+
+    <h2>{{ title }}</h2>
+    <ul>
+
+    <li>Заказ на сумму - {{ order }}</li>
+            {% for product in products %}
+            <p>Товары в заказе <a href="{% url 'product' product.id %}"> {{ product }}</a></p>
+            {% endfor %}
+
+    </ul>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+

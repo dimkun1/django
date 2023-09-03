@@ -7,7 +7,7 @@ from django.db import models
 class Client(models.Model):
     name = models.CharField(max_length=200)
     email = models.EmailField()
-    nummer_tel = models.IntegerField(max_length=15)
+    nummer_tel = models.IntegerField()
     address = models.TextField()
     date_registration = models.DateTimeField(auto_now=True)
 
@@ -23,7 +23,7 @@ class Product(models.Model):
     date_up_product = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return f'{self.name_product} {self.description} {self.price}'
+        return f'{self.name_product} {self.description}, цена {self.price}'
 
 
 class Order(models.Model):
@@ -33,4 +33,4 @@ class Order(models.Model):
     date_ordered = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f'{self.customer} {self.products} {self.total_price} {self.date_ordered}'
+        return f'{self.total_price} {self.date_ordered}'

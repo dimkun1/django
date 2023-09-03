@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    <h3>Название статьи {{ article.title }}</h3>
+    <p>Дата публикации {{ article.public_date }}</p>
+    <p>Текст статьи {{ article.text }}</p>
+    <p>Кол-во просмотров {{ article.count }}</p>
+
+
+    <h2>Коментарии</h2>
+    <ul>
+    {% for comment in comments %}
+    <li>Автор - {{ comment.author }}, Дата обновления - {{ comment.update_date }}, <a href="{% url 'comment' comment.id %}">Коментарий {{ comment.id }} </a></li>
+    {% endfor %}
+    </ul>
+
+
+
+
+{% endblock %}
+
