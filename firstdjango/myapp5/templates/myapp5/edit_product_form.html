@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    <h2>{{ message }}</h2>
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <p>
+            <label>Наименование</label><br>
+            <input type="text" name="name_product" value="{{product.name_product}}" />
+        </p>
+        <p>
+            <label>Цена</label><br>
+            <input type="number" name="price" value="{{product.price}}" />
+        </p>
+        <p>
+            <label>Количество</label><br>
+            <input type="number" name="count" value="{{product.count}}" />
+        </p>
+        <p>
+            <label>Описание</label><br>
+            <input type="text" name="description" value="{{product.description}}" />
+        </p>
+        <p>
+            <label>Изображение</label><br>
+
+            {% if product.image %}
+            <img src="{{ product.image.url }}">
+            {% endif %}
+
+
+            {% if image_product.image_more %}
+<!--                {% for images in image_product.image_more %}-->
+
+                <img src="{{ image_product.image_more.url }}">
+<!--                {% endfor %}-->
+            {% endif %}
+
+
+            <input type="file" name="image" value="{{product.image}}" />
+        </p>
+        <input type="submit" value="Сохранить" >
+    </form>
+{% endblock %}

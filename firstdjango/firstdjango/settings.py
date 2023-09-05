@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'myapp', 'myapp1', 'myapp2', 'myapp3', 'myapp4', 'myapp5', 'myapp6',
+    'myapp', 'myapp1', 'myapp2', 'myapp3', 'myapp4', 'myapp5', 'myapp6', 'myapp7',
 ]
 
 MIDDLEWARE = [
@@ -115,6 +115,9 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+# MEDIA_DIR = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
@@ -157,6 +160,11 @@ LOGGING = {
             'filename': './log/django_app3.log',
             'formatter': 'verbose',  # добавлен параметр formatter
         },
+        'file7': {
+            'class': 'logging.FileHandler',
+            'filename': './log/django_app7.log',
+            'formatter': 'verbose',  # добавлен параметр formatter
+        },
     },
     'loggers': {
         'django': {
@@ -177,6 +185,11 @@ LOGGING = {
         'myapp2': {
             'handlers': ['console', 'file4'],
             'level': 'DEBUG',
+            'propagate': True,
+        },
+        'myapp7': {
+            'handlers': ['console', 'file7'],
+            'level': 'INFO',
             'propagate': True,
         },
     },

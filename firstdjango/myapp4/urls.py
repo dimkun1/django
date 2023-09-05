@@ -1,21 +1,18 @@
 from django.urls import path
-from .views import cube, rand100, coin
-from .views import get_articles, get_article, get_comment
-# from .views import hello, HelloView
-# from .views import year_post, MonthPost, post_detail
-# from .views import my_view
-# from .views import TemplIf
-# from .views import view_for
-# from .views import index, about
-# from .views import author_posts, post_full
+from . import views
 
 urlpatterns = [
-    path('cube/', cube, name='cube'),
-    path('coin/', coin, name='coin'),
-    path('rand100/', rand100, name='rand100'),
-    path('articles/<int:author_id>/', get_articles),
-    path('article/<int:article_id>/', get_article, name='article'),
-    path('comment/<int:comment_id>/', get_comment, name='comment'),
+    path('cube/', views.cube, name='cube'),
+    path('coin/', views.coin, name='coin'),
+    path('rand100/', views.rand100, name='rand100'),
+    path('articles/<int:author_id>/', views.get_articles),
+    path('article/<int:article_id>/', views.get_article, name='article'),
+    path('comment/<int:comment_id>/', views.get_comment, name='comment'),
+    path('choice/', views.choice, name='choice'),
+    path('author_form/', views.author_form, name='author_form'),
+    path('article_form/', views.article_form, name='article_form'),
+    path('comment_form/', views.comment_form, name='comment_form'),
+    # path('comment_form/<int:post_id>/', views.comment_form, name='comment_form'),
     # path('posts/<int:year>/', year_post, name='year_post'),
     # path('posts/<int:year>/<int:month>/', MonthPost.as_view(), name='month_post'),
     # path('posts/<int:year>/<int:month>/<slug:slug>/', post_detail, name='post_detail'),

@@ -45,7 +45,7 @@ class Article(models.Model):
     author = models.ForeignKey(Author, on_delete=models.CASCADE)
     category = models.CharField(max_length=100)
     count = models.IntegerField(default=0)
-    public = models.BooleanField()
+    public = models.BooleanField(default=False)
 
     def __str__(self):
         return f'{self.title} {self.text}'
@@ -56,7 +56,7 @@ class Comment(models.Model):
     article = models.ForeignKey(Article, on_delete=models.CASCADE)
     comment = models.TextField()
     create_date = models.DateTimeField(auto_now=True)
-    update_date = models.DateTimeField()
+    update_date = models.DateTimeField(null=True, default=None)
 
     def __str__(self):
         return f'{self.comment} {self.article} {self.author}'

@@ -20,15 +20,12 @@
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="e76a9670-661f-4848-8878-07ae91cade4b" object-ref="schemas/main/tables/myapp5_product" />
-      <object connection-id="e76a9670-661f-4848-8878-07ae91cade4b" object-ref="schemas/main/tables/myapp4_author" />
-      <object connection-id="e76a9670-661f-4848-8878-07ae91cade4b" object-ref="schemas/main/tables/myapp5_order" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
     <filter-actions connection-id="e76a9670-661f-4848-8878-07ae91cade4b" dataset="main.myapp4_author" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="e76a9670-661f-4848-8878-07ae91cade4b" dataset="main.myapp6_author" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="e76a9670-661f-4848-8878-07ae91cade4b" dataset="main.myapp5_gallery" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="e76a9670-661f-4848-8878-07ae91cade4b" dataset="main.myapp4_comment" active-filter-id="EMPTY_FILTER">
       <filter id="bd46095c-07b3-4fb8-8a95-3d1d8e78aead" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
         <condition column="id" operator="=" value="" active="true" />
@@ -39,13 +36,14 @@
         <condition column="id" operator="=" value="" active="true" />
       </filter>
     </filter-actions>
-    <filter-actions connection-id="e76a9670-661f-4848-8878-07ae91cade4b" dataset="main.myapp5_product" active-filter-id="1a9c9a6d-3c53-49c2-a29e-bd4e34eb7151">
+    <filter-actions connection-id="e76a9670-661f-4848-8878-07ae91cade4b" dataset="main.myapp5_product" active-filter-id="EMPTY_FILTER">
       <filter id="1a9c9a6d-3c53-49c2-a29e-bd4e34eb7151" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
         <condition column="id" operator="=" value="" active="true" />
       </filter>
     </filter-actions>
     <filter-actions connection-id="e76a9670-661f-4848-8878-07ae91cade4b" dataset="main.myapp5_client" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="e76a9670-661f-4848-8878-07ae91cade4b" dataset="main.myapp4_kicks" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="e76a9670-661f-4848-8878-07ae91cade4b" dataset="main.myapp7_user" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="e76a9670-661f-4848-8878-07ae91cade4b" dataset="main.myapp5_order" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="e76a9670-661f-4848-8878-07ae91cade4b" dataset="main.myapp6_post" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="e76a9670-661f-4848-8878-07ae91cade4b" dataset="main.myapp4_article" active-filter-id="1994f1db-b753-4357-83f3-cfa0fce321d5">
