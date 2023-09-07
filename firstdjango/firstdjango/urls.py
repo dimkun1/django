@@ -17,10 +17,23 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from firstdjango import settings
+from myapp4.views import index, about
+from django.conf.urls.static import static
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('myapp/', include('myapp.urls')),
+    # path('', include('myapp.urls')),
     path('myapp1/', include('myapp1.urls')),
     path('myapp2/', include('myapp2.urls')),
+    path('myapp4/', include('myapp4.urls')),
+    path('myapp5/', include('myapp5.urls')),
+    path('myapp6/', include('myapp6.urls')),
+    path('myapp7/', include('myapp7.urls')),
+    path('myapp9/', include('myapp9.urls')),
+    path('', index),
+    path('about/', about),
+    # path('__debug__/', include('debug_toolbar.urls')),
 
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    {% for article in articles %}
+        {% if article.public %}
+            <a href="{% url 'article' article.id %}">Название статьи {{ article.title }} </a>
+        {% else %}
+            <p>Название статьи {{ article.title }}</p>
+        {% endif %}
+    {% endfor %}
+{% endblock %}
+

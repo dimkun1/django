@@ -1,7 +1,6 @@
 import logging
 from django.http import HttpResponse
 from random import randint
-from django.shortcuts import render
 
 logger = logging.getLogger(__name__)
 
@@ -37,3 +36,4 @@ def rand100(request):
     result = randint(1, 100)
     logger.info(f'Сгенерированно значение - {result}')
     return HttpResponse(text(title, result))
+
