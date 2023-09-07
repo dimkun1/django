@@ -2,14 +2,57 @@
 <project version="4">
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
-    <value-preview-text-wrapping value="true" />
+    <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
+  </component>
+  <component name="DBNavigator.Project.DatabaseBrowserManager">
+    <autoscroll-to-editor value="false" />
+    <autoscroll-from-editor value="true" />
+    <show-object-properties value="true" />
+    <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files />
+    <open-files>
+      <object connection-id="e76a9670-661f-4848-8878-07ae91cade4b" object-ref="schemas/main/tables/myapp8_product" />
+    </open-files>
+  </component>
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="e76a9670-661f-4848-8878-07ae91cade4b" dataset="main.myapp8_product" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="e76a9670-661f-4848-8878-07ae91cade4b" dataset="main.myapp4_comment" active-filter-id="EMPTY_FILTER">
+      <filter id="bd46095c-07b3-4fb8-8a95-3d1d8e78aead" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="id" operator="=" value="" active="true" />
+      </filter>
+    </filter-actions>
+    <filter-actions connection-id="e76a9670-661f-4848-8878-07ae91cade4b" dataset="main.myapp4_kicks" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="e76a9670-661f-4848-8878-07ae91cade4b" dataset="main.myapp7_user" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="e76a9670-661f-4848-8878-07ae91cade4b" dataset="main.myapp5_order" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="e76a9670-661f-4848-8878-07ae91cade4b" dataset="main.myapp6_post" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="e76a9670-661f-4848-8878-07ae91cade4b" dataset="main.myapp4_article" active-filter-id="1994f1db-b753-4357-83f3-cfa0fce321d5">
+      <filter id="1994f1db-b753-4357-83f3-cfa0fce321d5" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="id" operator="=" value="" active="true" />
+      </filter>
+    </filter-actions>
+    <filter-actions connection-id="e76a9670-661f-4848-8878-07ae91cade4b" dataset="main.myapp4_author" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="e76a9670-661f-4848-8878-07ae91cade4b" dataset="main.myapp6_author" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="e76a9670-661f-4848-8878-07ae91cade4b" dataset="main.myapp5_gallery" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="e76a9670-661f-4848-8878-07ae91cade4b" dataset="main.myapp5_order_products" active-filter-id="EMPTY_FILTER">
+      <filter id="54e665fd-f6b4-41e4-a5b9-ef47280d7ac6" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="id" operator="=" value="" active="true" />
+      </filter>
+    </filter-actions>
+    <filter-actions connection-id="e76a9670-661f-4848-8878-07ae91cade4b" dataset="main.myapp5_product" active-filter-id="EMPTY_FILTER">
+      <filter id="1a9c9a6d-3c53-49c2-a29e-bd4e34eb7151" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="id" operator="=" value="" active="true" />
+      </filter>
+    </filter-actions>
+    <filter-actions connection-id="e76a9670-661f-4848-8878-07ae91cade4b" dataset="main.myapp5_client" active-filter-id="EMPTY_FILTER" />
+  </component>
+  <component name="DBNavigator.Project.ObjectQuickFilterManager">
+    <last-used-operator value="EQUAL" />
+    <filters />
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections />
