@@ -31,7 +31,9 @@ urlpatterns = [
     path('myapp5/', include('myapp5.urls')),
     path('myapp6/', include('myapp6.urls')),
     path('myapp7/', include('myapp7.urls')),
+    path('myapp9/', include('myapp9.urls')),
     path('', index),
     path('about/', about),
+    # path('__debug__/', include('debug_toolbar.urls')),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
