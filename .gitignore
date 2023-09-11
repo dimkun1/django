@@ -1,0 +1,5 @@
+/firstdjango/media/
+/firstdjango/static/
+*.sqlite3
+*.log
+*.pyc
