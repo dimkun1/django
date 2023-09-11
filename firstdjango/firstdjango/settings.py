@@ -11,10 +11,11 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 import os
 from pathlib import Path
+from dotenv import load_dotenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
+load_dotenv(BASE_DIR / '.env')
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
@@ -22,16 +23,22 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECRET_KEY = 'django-insecure-56eql7*l@gt$ow0)^ik&7&17jr29i$5f^i3n-f!2@ych%0&$jb'
 SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
+
+# DEBUG = True
+# server
 DEBUG = False
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
+# SESSION_COOKIE_SECURE = True
+# CSRF_COOKIE_SECURE = True
 
 # ALLOWED_HOSTS = ['192.168.1.64', ]
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'testyyy.pythonanywhere.com',
+]
 
 INTERNAL_IPS = [
     '127.0.0.1',
-    'testyyy.pythonanywhere.com',
+
 ]
 # Application definition
 
@@ -81,25 +88,24 @@ WSGI_APPLICATION = 'firstdjango.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
-
-DATABASES = {'default':
-                 {'ENGINE': 'django.db.backends.mysql',
-                  'NAME': 'testyyy$default',
-                  'USER': 'testyyy',
-                  'PASSWORD': os.getenv('MYSQL_PASSWORD'),
-                  'HOST': 'testyyy.mysql.pythonanywhere-services.com',
-                  'OPTIONS': {'init_command': "SET NAMES 'utf8mb4';SET sql_mode = 'STRICT_TRANS_TABLES'",
-                              'charset': 'utf8mb4',
-                              },
-                  }
-             }
+# DATABASES = {'default':
+#                  {'ENGINE': 'django.db.backends.mysql',
+#                   'NAME': 'testyyy$default',
+#                   'USER': 'testyyy',
+#                   'PASSWORD': os.getenv('MYSQL_PASSWORD'),
+#                   'HOST': 'testyyy.mysql.pythonanywhere-services.com',
+#                   'OPTIONS': {'init_command': "SET NAMES 'utf8mb4';SET sql_mode = 'STRICT_TRANS_TABLES'",
+#                               'charset': 'utf8mb4',
+#                               },
+#                   }
+#              }
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 

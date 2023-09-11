@@ -18487,3 +18487,430 @@ INFO 2023-09-07 22:10:27,310 basehttp 6268 4172 "GET /myapp9/template/ HTTP/1.1"
 INFO 2023-09-07 22:22:19,522 autoreload 6268 11716 C:\G\Project\Django\firstdjango\firstdjango\settings.py changed, reloading.
 INFO 2023-09-07 22:22:20,236 autoreload 2312 8968 Watching for file changes with StatReloader
 INFO 2023-09-07 22:22:31,781 autoreload 2312 8968 C:\G\Project\Django\firstdjango\firstdjango\settings.py changed, reloading.
+INFO 2023-09-08 14:14:30,109 autoreload 5684 6652 Watching for file changes with StatReloader
+INFO 2023-09-08 14:15:02,269 autoreload 5684 6652 C:\G\Project\Django\firstdjango\firstdjango\settings.py changed, reloading.
+INFO 2023-09-08 14:15:03,607 autoreload 13636 3988 Watching for file changes with StatReloader
+INFO 2023-09-08 14:15:08,702 autoreload 13636 3988 C:\G\Project\Django\firstdjango\firstdjango\settings.py changed, reloading.
+INFO 2023-09-08 14:15:10,338 autoreload 4900 10436 Watching for file changes with StatReloader
+ERROR 2023-09-08 14:15:15,761 log 4900 14420 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\debug_toolbar\middleware.py", line 74, in __call__
+    rendered = toolbar.render_toolbar()
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 82, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2023-09-08 14:15:15,780 basehttp 4900 14420 "GET / HTTP/1.1" 500 139642
+ERROR 2023-09-08 14:15:16,493 log 4900 11728 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\debug_toolbar\middleware.py", line 74, in __call__
+    rendered = toolbar.render_toolbar()
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 82, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2023-09-08 14:15:16,510 basehttp 4900 11728 "GET /favicon.ico HTTP/1.1" 500 139342
+INFO 2023-09-08 14:16:19,486 autoreload 4900 10436 C:\G\Project\Django\firstdjango\firstdjango\settings.py changed, reloading.
+INFO 2023-09-08 14:16:20,766 autoreload 5268 8664 Watching for file changes with StatReloader
+INFO 2023-09-08 14:16:22,684 autoreload 5268 8664 C:\G\Project\Django\firstdjango\firstdjango\settings.py changed, reloading.
+INFO 2023-09-08 14:16:24,103 autoreload 15060 10700 Watching for file changes with StatReloader
+INFO 2023-09-08 14:16:25,951 autoreload 15060 10700 C:\G\Project\Django\firstdjango\firstdjango\settings.py changed, reloading.
+INFO 2023-09-08 14:16:27,291 autoreload 10316 9092 Watching for file changes with StatReloader
+ERROR 2023-09-08 14:16:30,555 log 10316 6496 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\debug_toolbar\middleware.py", line 74, in __call__
+    rendered = toolbar.render_toolbar()
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 82, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2023-09-08 14:16:30,588 basehttp 10316 6496 "GET / HTTP/1.1" 500 139705
+ERROR 2023-09-08 14:16:31,268 log 10316 2452 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\debug_toolbar\middleware.py", line 74, in __call__
+    rendered = toolbar.render_toolbar()
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 82, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2023-09-08 14:16:31,286 basehttp 10316 2452 "GET /favicon.ico HTTP/1.1" 500 139405
+INFO 2023-09-08 14:17:09,971 autoreload 10316 9092 C:\G\Project\Django\firstdjango\firstdjango\settings.py changed, reloading.
+INFO 2023-09-08 14:17:11,255 autoreload 4656 9224 Watching for file changes with StatReloader
+ERROR 2023-09-08 14:17:13,547 log 4656 456 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\debug_toolbar\middleware.py", line 74, in __call__
+    rendered = toolbar.render_toolbar()
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 82, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2023-09-08 14:17:13,557 basehttp 4656 456 "GET / HTTP/1.1" 500 139705
+ERROR 2023-09-08 14:17:14,116 log 4656 5264 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\debug_toolbar\middleware.py", line 74, in __call__
+    rendered = toolbar.render_toolbar()
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 82, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\G\Project\Django\venv\Lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2023-09-08 14:17:14,138 basehttp 4656 5264 "GET /favicon.ico HTTP/1.1" 500 139405
+INFO 2023-09-08 14:21:44,346 autoreload 4656 9224 C:\G\Project\Django\firstdjango\firstdjango\settings.py changed, reloading.
+INFO 2023-09-08 14:21:46,018 autoreload 4236 6604 Watching for file changes with StatReloader
+INFO 2023-09-08 14:21:55,737 autoreload 4236 6604 C:\G\Project\Django\firstdjango\firstdjango\settings.py changed, reloading.
+INFO 2023-09-08 14:21:57,844 autoreload 1516 11004 Watching for file changes with StatReloader
+INFO 2023-09-08 14:23:29,145 autoreload 1516 11004 C:\G\Project\Django\firstdjango\firstdjango\urls.py changed, reloading.
+INFO 2023-09-08 14:23:30,976 autoreload 316 6608 Watching for file changes with StatReloader
+INFO 2023-09-08 14:23:34,786 basehttp 316 2976 "GET / HTTP/1.1" 200 10535
+INFO 2023-09-08 14:23:34,820 basehttp 316 3516 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2023-09-08 14:23:34,820 basehttp 316 2976 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2023-09-08 14:23:34,838 basehttp 316 2976 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2023-09-08 14:23:34,902 basehttp 316 2976 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+WARNING 2023-09-08 14:23:35,185 log 316 2976 Not Found: /favicon.ico
+WARNING 2023-09-08 14:23:35,187 basehttp 316 2976 "GET /favicon.ico HTTP/1.1" 404 13522
+INFO 2023-09-08 14:24:08,320 basehttp 316 2976 "GET /myapp5/product/9/ HTTP/1.1" 200 10696
+INFO 2023-09-08 14:24:08,422 basehttp 316 2976 "GET /media/images433_zQhnUIL.jpg HTTP/1.1" 200 5001
+INFO 2023-09-08 14:24:33,524 autoreload 316 6608 C:\G\Project\Django\firstdjango\firstdjango\settings.py changed, reloading.
+INFO 2023-09-08 14:24:35,219 autoreload 11156 2504 Watching for file changes with StatReloader
+INFO 2023-09-08 14:24:37,737 basehttp 11156 2664 "GET / HTTP/1.1" 200 10535
+INFO 2023-09-08 14:24:41,561 basehttp 11156 2664 "GET /myapp5/product/9/ HTTP/1.1" 200 10695
+INFO 2023-09-08 14:24:43,347 basehttp 11156 2664 "GET /myapp5/product/9/ HTTP/1.1" 200 10695
+INFO 2023-09-08 14:24:50,172 autoreload 11156 2504 C:\G\Project\Django\firstdjango\firstdjango\settings.py changed, reloading.
+INFO 2023-09-08 14:24:51,509 autoreload 7636 8368 Watching for file changes with StatReloader
+ERROR 2023-09-08 14:24:56,335 basehttp 7636 15156 "GET / HTTP/1.1" 500 59
+INFO 2023-09-08 14:25:03,065 autoreload 7636 8368 C:\G\Project\Django\firstdjango\firstdjango\settings.py changed, reloading.
+INFO 2023-09-08 14:25:04,863 autoreload 12148 9676 Watching for file changes with StatReloader
+INFO 2023-09-08 14:25:09,694 basehttp 12148 1828 "GET / HTTP/1.1" 200 10535
+INFO 2023-09-08 14:29:37,603 basehttp 12148 1828 "GET / HTTP/1.1" 200 10536
+INFO 2023-09-08 14:30:05,946 basehttp 12148 1828 "GET /myapp5/product/8/ HTTP/1.1" 200 10640
+WARNING 2023-09-08 14:30:11,808 log 12148 1828 Not Found: /myapp6/product
+WARNING 2023-09-08 14:30:11,808 basehttp 12148 1828 "GET /myapp6/product HTTP/1.1" 404 15686
+INFO 2023-09-08 14:30:29,643 basehttp 12148 1828 "GET /admin/ HTTP/1.1" 200 24722
+INFO 2023-09-08 14:30:29,663 basehttp 12148 11668 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2023-09-08 14:30:29,663 basehttp 12148 1828 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2023-09-08 14:30:29,673 basehttp 12148 3136 "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2023-09-08 14:30:29,673 basehttp 12148 12688 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2023-09-08 14:30:29,681 basehttp 12148 11668 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2023-09-08 14:30:29,681 basehttp 12148 10348 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2023-09-08 14:30:29,682 basehttp 12148 1828 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2023-09-08 14:30:29,702 basehttp 12148 10348 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2023-09-08 14:30:29,702 basehttp 12148 1828 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2023-09-08 14:30:40,613 basehttp 12148 1828 "POST /admin/logout/ HTTP/1.1" 200 13960
+INFO 2023-09-08 14:30:41,879 basehttp 12148 1828 "GET /admin/ HTTP/1.1" 200 10828
+INFO 2023-09-08 14:30:41,906 basehttp 12148 10348 "GET /static/debug_toolbar/js/redirect.js HTTP/1.1" 304 0
+INFO 2023-09-08 14:30:45,193 basehttp 12148 10348 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 14520
+INFO 2023-09-08 14:30:45,227 basehttp 12148 10348 "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2023-09-08 14:30:48,953 basehttp 12148 10348 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 10810
+INFO 2023-09-08 14:30:55,123 basehttp 12148 11668 "GET /admin/ HTTP/1.1" 200 24722
+INFO 2023-09-08 14:31:10,573 basehttp 12148 11668 "GET /admin/ HTTP/1.1" 200 24722
+INFO 2023-09-08 14:31:13,145 basehttp 12148 11668 "GET /admin/ HTTP/1.1" 200 24722
+INFO 2023-09-08 14:31:55,243 basehttp 12148 11668 "GET / HTTP/1.1" 200 10537
+INFO 2023-09-08 14:31:56,744 basehttp 12148 11668 "GET / HTTP/1.1" 200 10537
+INFO 2023-09-08 14:31:57,205 basehttp 12148 11668 "GET / HTTP/1.1" 200 10537
+INFO 2023-09-11 10:49:23,799 autoreload 3348 10936 Watching for file changes with StatReloader
+INFO 2023-09-11 10:49:27,611 basehttp 3348 10036 "GET / HTTP/1.1" 200 10536
+INFO 2023-09-11 10:49:27,639 basehttp 3348 1432 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2023-09-11 10:49:27,640 basehttp 3348 10036 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2023-09-11 10:49:27,658 basehttp 3348 10036 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2023-09-11 10:49:27,670 basehttp 3348 10036 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+WARNING 2023-09-11 10:49:28,023 log 3348 10036 Not Found: /favicon.ico
+WARNING 2023-09-11 10:49:28,025 basehttp 3348 10036 "GET /favicon.ico HTTP/1.1" 404 13522
